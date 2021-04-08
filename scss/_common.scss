@@ -1,0 +1,8 @@
+// dropdown
+.dropdown {
+    .dropdown-toggle {
+        &:after {
+            display: none;
+        }
+    }
+}
