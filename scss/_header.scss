@@ -12,6 +12,7 @@
       .navbar-brand {
         padding: 0;
         line-height: $header-height;
+        height: $header-height;
         margin-left: 27px;
         display: flex;
         // align-items: center;
@@ -29,6 +30,8 @@
       padding: $navbar-collapse-padding;
       .navbar-nav {
         flex-direction: row;
+        height: $header-height;
+        line-height: $header-height;
         .dropdown-menu {
           position: absolute;
         }
@@ -36,7 +39,6 @@
           i {
             font-size: 24px;
           }
-          line-height: $header-height;
           padding: $topbar-navlink-padding;
         }
       }
@@ -56,13 +58,13 @@
 .top-navbar {
   .navbar {
     .navbar-header {
-      @include media-breakpoint-down(lg) {
+      @include media-breakpoint-down(md) {
         // width: 60px;
         border-right: none;
       }
       .navbar-brand {
         @include media-breakpoint-down(lg) {
-          margin: 0 24px;
+          margin: 0 23.5px;
         }
         .logo-text {
           @include media-breakpoint-between(md,lg) {
@@ -72,7 +74,9 @@
       }
     }
     .navbar-collapse {
-      padding-left: 0;
+      @include media-breakpoint-down(lg) {
+        padding-left: 0;
+      }
     }
   }
 }

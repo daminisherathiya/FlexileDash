@@ -15,7 +15,7 @@
 
     <header class="top-navbar">
       <nav class="navbar navbar-expand-md navbar-light">
-        <a class="d-block d-md-none fs-3 ms-4" aria-current="page" href="#"><i class="mdi mdi-menu"></i></a>
+        <a class="d-block d-md-none fs-3 ms-4 toggle-minimize" aria-current="page" href="#"><i class="mdi mdi-menu"></i></a>
         <div class="navbar-header">
           <a class="navbar-brand" href="#">
             <div><img src="./images/logo.png" alt=""></div>
@@ -27,12 +27,12 @@
         </button>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto">
-            <li class="nav-item">
-              <a class="nav-link active d-none d-md-block" aria-current="page" href="#"><i class="mdi mdi-menu"></i></a>
+          <ul class="navbar-nav me-auto d-none d-md-flex">
+            <li class="nav-item toggle-minimize">
+              <a class="nav-link active" aria-current="page" href="#"><i class="mdi mdi-menu"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link d-none d-md-block" href="#"><i class="mdi mdi-magnify"></i></a>
+              <a class="nav-link" href="#"><i class="mdi mdi-magnify"></i></a>
             </li>
           </ul>
           <ul class="navbar-nav pe-1 ms-lg-auto ms-3">
@@ -82,8 +82,92 @@
       </nav>
     </header>
 
+    <!-- Left sidebar Start-->
+    <aside class="left-sidebar">
+      <div class="scroll-sidebar">
+        <nav class="sidebar-nav"> 
+          <ul>
+            <li class="nav-small-cap">
+              <div class="horizontal-line"></div>
+              <span class="hide-menu">Personal</span>
+            </li>
+            <li class="sidebar-item">
+              <a href="index.html" class="sidebar-link active">
+                <i class="mdi mdi-chart-pie"></i>
+                <span class="hide-menu">Dashboard</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="table.html" class="sidebar-link">
+                <i class="mdi mdi-inbox"></i>
+                <span class="hide-menu">Inbox</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="profile.html" class="sidebar-link">
+                <i class="mdi mdi-toggle-switch"></i>
+                <span class="hide-menu">UI Elements</span>
+              </a>
+            </li>
+            <div class="spacer"></div>
+            <li class="nav-small-cap">
+              <div class="horizontal-line"></div>
+              <span class="hide-menu">Professional</span>
+            </li>
+            <li class="sidebar-item">
+              <a href="error.html" class="sidebar-link">
+                <i class="mdi mdi-file-document"></i>
+                <span class="hide-menu">Forms</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="login.html" class="sidebar-link">
+                <i class="mdi mdi-table"></i>
+                <span class="hide-menu">Tables</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="login.html" class="sidebar-link">
+                <i class="mdi mdi-chart-bar"></i>
+                <span class="hide-menu">Charts</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="login.html" class="sidebar-link">
+                <i class="mdi mdi-widgets"></i>
+                <span class="hide-menu">Widgets</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="login.html" class="sidebar-link">
+                <i class="mdi mdi-bullseye"></i>
+                <span class="hide-menu">Icons</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a href="login.html" class="sidebar-link">
+                <i class="mdi mdi-map-marker"></i>
+                <span class="hide-menu">Maps</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="flex-grow-1"></div>
+        <div class="feature-container">
+          <div class="feature-box">
+            <h4>Upgrade to <br> Premium</h4>
+            <button class="btn btn-primary">Upgrade</button>
+            <div class="bg-img"><img src="./images/sidebar-feature-bg.png" alt=""></div>
+          </div>
+        </div>
+        
+      </div>
+    </aside>
+    <!-- left sidebar End -->
+
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./apexcharts-bundle/dist/apexcharts.min.js"></script>
+    <script src="./js/custom.js"></script>
   </body>
 </html>
