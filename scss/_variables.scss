@@ -46,6 +46,7 @@ $cyan: #1a9bfc !default;
 $light-gray: #e7e9f0 !default; //
 $common: $gray-500; //
 $black: $gray-800 !default;
+$light-green: #ebfaf2;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -65,6 +66,7 @@ $colors: (
   "gray-dark": $gray-800,
   "light-gray": $light-gray,
   "common": $gray-500,
+  "light-green": $light-green,
 ) !default;
 // scss-docs-end colors-map
 
@@ -93,6 +95,7 @@ $theme-colors: (
   "light-gray": $light-gray,
   "common": $gray-500,
   "black": $gray-800,
+  "light-green": $light-green,
 ) !default;
 // scss-docs-end theme-colors-map
 
