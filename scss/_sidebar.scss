@@ -8,6 +8,9 @@
     z-index: 50;
     border-right: 1px solid $gray-300;
     @include media-breakpoint-only(md) {
+        & + .main-wrapper {
+            margin-left: 78px;
+        }
         .sidebar-nav ul {
             .nav-small-cap {
                 display: flex;
@@ -55,14 +58,17 @@
         ul .sidebar-item .sidebar-link {
             padding: 4px 14px;
         }
-        & + .main-wrapper {
-            margin-left: 0;
-        }
+        // & + .main-wrapper {
+        //     margin-left: 0;
+        // }
         .feature-container {
             display: block;
         }
 
         @include media-breakpoint-up(lg) {
+            & + .main-wrapper {
+                margin-left: 78px;
+            }
             .sidebar-nav ul {
                 .nav-small-cap {
                     display: flex;
@@ -160,10 +166,10 @@
                     
                 }
                 &.active {
-                    background-color: #1a9bfc;
+                    background-color:$cyan;
                     color: white;
                     &:hover {
-                        background-color: #1a9bfc;
+                        background-color:$cyan;
                     }
                 }
                 &:hover {

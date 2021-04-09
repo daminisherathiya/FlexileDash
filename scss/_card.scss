@@ -1,0 +1,44 @@
+.banner-1 {
+    margin-bottom: 54px;
+}
+.add-new-btn {
+    margin-right: 7px;
+    padding-top: 8.5px;
+    padding-bottom: 8.5px;
+    i {
+        margin-right: 12px
+    }
+}
+.main-select {
+    padding: 10.5px 42px 9.5px 17px ;
+}
+
+.card {
+    margin-bottom: 24px;
+    .card-title {
+        font-weight: $font-weight-medium;
+        line-height: 25px;
+    }
+    .card-subtitle {
+        font-size: 13px;
+    }
+    i {
+        font-size: 6px;
+    }
+    .text-muted {
+        line-height: 13px;
+    }
+    .budget {
+        color: $gray-800;
+    }
+    &.john-box {
+        background-color: #e6f4ff;
+        background: url(../images/download-bg.png) no-repeat center right;
+        background-size: cover;
+        .card-body div{
+            padding: 5px 11px;
+            margin-bottom: 28px;
+        }
+        
+    }
+}

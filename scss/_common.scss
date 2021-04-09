@@ -1,3 +1,13 @@
+.main-wrapper {
+    padding-top: $header-height;
+    margin-left: $sidebar-width-full;
+    @include media-breakpoint-down(md) {
+        margin-left: 0;
+    }
+    .container-fluid {
+        padding: 13px 30px;
+    }
+}
 // dropdown
 .dropdown {
     .dropdown-toggle {
@@ -6,7 +16,18 @@
         }
     }
 }
-
-a {
-    text-decoration: none;
+.fw-medium {
+    font-weight: $font-weight-medium;
 }
+.rounded {
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+    font-size: 20px;
+    color: $white;
+    text-align: center;
+}
+  
+  
+  
+  

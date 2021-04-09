@@ -1,4 +1,8 @@
 .top-navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  background-color: $white;
   .navbar {
     padding: 0;
     .navbar-header {
