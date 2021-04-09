@@ -170,12 +170,12 @@
     <div class="main-wrapper">
       <div class="container-fluid">
         <div class="row banner-1">
-          <div class="col-lg-6">
+          <div class="col-md-6">
             <p class="fs-5">Welcome Johnathan</p>
             <h2>Analytical Dashboard</h2>
           </div>
-          <div class="col-lg-6 d-flex align-items-center">
-            <div class="d-sm-flex ms-sm-auto py-sm-0 py-3">
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="d-md-flex ms-sm-auto d-none">
               <div class="me-2 mb-3 mb-sm-0">
                 <select class="form-select shadow-none border-0 main-select" aria-label="Default select example">
                   <option selected>Today 23 March</option>
@@ -185,7 +185,7 @@
                 </select>
               </div>
               <div>
-                <button class="btn add-new-btn text-white bg-cyan"><i class="fas fa-plus"></i> Add New</button>
+                <button class="btn add-new-btn text-white btn-cyan"><i class="fas fa-plus"></i> Add New</button>
               </div>
             </div>
           </div>
@@ -197,7 +197,7 @@
               <div class="card-body">
                 <div>
                   <p class="fs-4 text-primary fw-medium mb-3">Hey John,<br> Download latest report</p>
-                  <button class="btn bg-cyan text-white">Download</button>
+                  <button class="btn btn-cyan text-white">Download</button>
                 </div>
               </div>
             </div>
@@ -225,7 +225,9 @@
                       <div class="rounded rounded-circle bg-warning fs-4"><i class="fas fa-shopping-basket fs-4"></i></div>
                     </div>
                   </div>
-                  <div id="monthly_sales"></div>
+                  <div style="min-height: 85px;">
+                    <div id="monthly_sales"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -267,11 +269,15 @@
                     </select>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-between mb-4">
                   <p>Sales Yearly</p>
                   <h3 class="me-3 fs-3">8,364,398</h3>
                 </div>
-                <div id="total_sales"></div>
+                <div class="position-relative">
+                  <div id="total_sales"></div>
+                  <div class="chart-icon"><i class="mdi mdi-cart-outline fs-1"></i></div>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -385,26 +391,26 @@
           <div class="col-xl-4 col-md-6">
             <div class="card">
               <div><img class="img-fluid w-100" src="./images/bg-1.png" alt=""></div>
-              <div class="card-body">
-                <p class="text-muted fs-7 clock-p"><i class="far fa-clock fs-4"></i> 22 March, 2021</p>
+              <div class="card-body border-bottom">
+                <p class="text-muted fs-7 clock-p"><i class="far fa-clock fs-4 me-2"></i> 22 March, 2021</p>
                 <h3 class="mb-4">Super awesome, Angular 12 is coming soon!</h3>
-                <div class="d-flex border-bottom pb-4">
+                <div class="d-flex pb-2">
                   <div class="badge bg-primary me-2 mb-2">Medium</div>
                   <div class="badge bg-danger mb-2">Low</div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center mt-3">
-                  <div class="d-flex">
-                    <div><img src="./images/user/5.png" alt=""></div>
-                    <div><img src="./images/user/6.png" alt=""></div>
-                    <div class="rounded-sm rounded-circle bg-light-green"><i class="mdi mdi-plus text-success fs-4"></i></div>
-                  </div>
-                  <div><i class=" fab fa-rocketchat fs-3"></i></div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center py-3 px-4">
+                <div class="d-flex">
+                  <div class="me-1"><img src="./images/user/5.png" alt=""></div>
+                  <div class="me-1"><img src="./images/user/6.png" alt=""></div>
+                  <div class="rounded-sm rounded-circle bg-light-green"><i class="mdi mdi-plus text-success fs-4"></i></div>
                 </div>
+                <div class="me-2"><i class=" fab fa-rocketchat fs-2"></i></div>
               </div>
             </div>
           </div>
           <div class="col-xl-4  col-md-6">
-            <div class="card">
+            <div class="card overflow-hidden">
               <div class="card-body pb-0">
                 <div class="d-flex justify-content-between">
                   <div>
@@ -449,7 +455,7 @@
                       <div class="badge bg-light-gray text-common">+68%</div>
                     </div>
                   </div>
-                  <div class="d-flex pt-3 align-items-center justify-content-between">
+                  <div class="d-flex py-3 align-items-center justify-content-between">
                     <div class="d-flex align-items-center">
                       <div class="rounded bg-success rounded-circle me-3"><i class="mdi mdi-message-outline fs-3"></i></div>
                       <div>
@@ -463,7 +469,10 @@
                   </div>
                 </div>
               </div>
-              <div id="weekly_stats"></div>
+              <div>
+                <div id="weekly_stats"></div>
+              </div>
+              
             </div>
           </div>
           <div class="col-xl-4">
@@ -511,7 +520,7 @@
                     <div class="activity">
                       <div class="ring-warning"></div>
                       <div>
-                        <p class="fs-6 fw-bold text-black">New sale recorded <span class="text-cyan">#ML-3467</span></p>
+                        <p class="fs-6 fw-bold text-black">New sale recorded <a href="#" class="text-cyan">#ML-3467</a></p>
                       </div>
                     </div>
                   </div>
@@ -538,7 +547,7 @@
                     <div class="activity">
                       <div class="ring-primary"></div>
                       <div>
-                        <p class="fs-6 fw-bold text-black">New sale recorded <span class="text-cyan">#ML-3467</span></p>
+                        <p class="fs-6 fw-bold text-black">New sale recorded <a href="#" class="text-cyan">#ML-3467</a></p>
                       </div>
                     </div>
                   </div>

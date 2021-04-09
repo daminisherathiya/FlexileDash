@@ -72,15 +72,18 @@ var sales_overview_options = {
   var monthly_sales_options = {
     series: [{
     name: 'Monthly Sales',
-    data: [35, 386, 20, 166, 30]
+    data: [35, 60, 30, 55, 40]
   }],
     chart: {
-    height: 85,
+    height: 95,
     width: '100%',
     type: 'area',
-    offsetY: 30,
+    offsetY: 10,
     toolbar: {
       show: false,
+    },
+    sparkline: {
+      enabled: true,
     }
   },
   dataLabels: {
@@ -139,13 +142,13 @@ var sales_overview_options = {
 
   var total_sales_options = {
     series: [25, 25, 25, 25],
-    labels: ["2021", "2020", "2019"],
+    labels: ["2021", "2020", "2019", "2018"],
     chart: {
-    height: 330,
+    height: 344,
     type: 'donut',
     fontFamily: "Poppins, sans-serif",
     foreColor: "#98aab4",
-    offsetY: 40,
+    // offsetY: 40,
   },
   colors: ['#1a9bfc', '#1e4db7', '#fec90f', '#ecf0f2'],
   dataLabels: {
@@ -153,7 +156,8 @@ var sales_overview_options = {
   },
   legend: {
     position: 'bottom',
-    offsetY: 0,
+    offsetY: 10,
+    fontSize: '16px',
   },
   grid: {
     show: false,
@@ -172,7 +176,7 @@ var sales_overview_options = {
             size: '78%',
             background: 'transparent',
             labels: {
-                show: true,
+                show: false,
                 name: {
                     show: true,
                     fontSize: '18px',
@@ -180,11 +184,11 @@ var sales_overview_options = {
                     offsetY: -10,
                 },
                 value: {
-                    show: true,
+                    show: false,
                     color: "#98aab4",
                 },
                 total: {
-                    show: true,
+                    show: false,
                     label: 'Our Visitors',
                     color: '#98aab4',
                 }
@@ -205,15 +209,18 @@ var sales_overview_options = {
 var weekly_stats_options = {
   series: [{
   name: 'Monthly Sales',
-  data: [35, 386, 20, 166, 30]
+  data: [40, 60, 50, 65]
 }],
   chart: {
-  height: 85,
+  height: 155,
   width: '100%',
   type: 'area',
-  offsetY: 30,
+  offsetY: 0,
   toolbar: {
     show: false,
+  },
+  sparkline: {
+    enabled: true,
   }
 },
 dataLabels: {

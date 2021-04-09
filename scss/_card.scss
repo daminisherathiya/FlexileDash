@@ -20,7 +20,11 @@
 .main-select {
     padding: 10.5px 42px 9.5px 17px ;
 }
-
+.btn.btn-primary:hover {
+    color: $primary !important;
+    background-color: white !important;
+    border: 1px solid $primary;
+}
 .card {
     margin-bottom: 24px;
     .card-title {
@@ -42,9 +46,19 @@
     .clock-p {
         margin-bottom: 27px;
         margin-top: 9px;
+        display: flex;
+        align-items: center;
     }
     .eliipsis {
         color: #d3dde2;
+        &:hover {
+            color: $cyan;
+        }
+    }
+    .chart-icon {
+        position: absolute;
+        top: 116px;
+        left: 136px;
     }
     .activity-box {
         .activity {
