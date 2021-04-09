@@ -38,6 +38,7 @@
         line-height: $header-height;
         .dropdown-menu {
           position: absolute;
+          line-height: 2;
         }
         .nav-item > .nav-link {
           i {
@@ -48,7 +49,7 @@
       }
       .navbar-nav:nth-child(2) {
         .nav-item > .nav-link {
-          padding: 0 12px;
+          padding: 0 13px;
           i {
             font-size: 25px;
           }
