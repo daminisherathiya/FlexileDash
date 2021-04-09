@@ -16,7 +16,7 @@ var sales_overview_options = {
     offsetY: 30,
     toolbar: {
         show: false,
-    }
+    },
   },
   legend: {
     show: false,
@@ -144,11 +144,10 @@ var sales_overview_options = {
     series: [25, 25, 25, 25],
     labels: ["2021", "2020", "2019", "2018"],
     chart: {
-    height: 344,
+    height: 345,
     type: 'donut',
     fontFamily: "Poppins, sans-serif",
     foreColor: "#98aab4",
-    // offsetY: 40,
   },
   colors: ['#1a9bfc', '#1e4db7', '#fec90f', '#ecf0f2'],
   dataLabels: {
