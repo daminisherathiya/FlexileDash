@@ -91,3 +91,10 @@
     }
 }
   
+.table {
+    tr:last-child {
+        td {
+            border: none;
+        }
+    }
+}
