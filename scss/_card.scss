@@ -1,3 +1,11 @@
+@mixin ring {
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    width: 14px;
+    height: 14px;
+    left: -9px;
+}
 .banner-1 {
     margin-bottom: 54px;
 }
@@ -31,6 +39,46 @@
     .budget {
         color: $gray-800;
     }
+    .clock-p {
+        margin-bottom: 30px;
+    }
+    .eliipsis {
+        color: #d3dde2;
+    }
+    .activity-box {
+        .activity {
+            position: relative;
+            border-left: 3px solid #ecf0f2;
+            margin-left: 19px;
+            padding-left: 25px;
+            
+            .ring-primary {
+                border: 3px solid $primary;
+                @include ring;   
+            }
+            .ring-success {
+                border: 3px solid $success;
+                @include ring;   
+            }
+            .ring-danger {
+                border: 3px solid $danger;
+                @include ring;   
+            }
+            .ring-warning {
+                border: 3px solid $warning;
+                @include ring;   
+            }
+            .ring-cyan {
+                border: 3px solid $cyan;
+                @include ring;   
+            }
+            p {
+                line-height: 16px;
+                margin-bottom: 30px;
+            }
+        }
+    }
+    
     &.john-box {
         background-color: #e6f4ff;
         background: url(../images/download-bg.png) no-repeat center right;
@@ -38,7 +86,7 @@
         .card-body div{
             padding: 5px 11px;
             margin-bottom: 28px;
-        }
-        
+        }   
     }
 }
+  

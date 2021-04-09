@@ -13,7 +13,7 @@ $gray-600: #99abb4 !default; //
 $gray-700: #495057 !default;
 $gray-800: #11142d !default; //
 $gray-900: #212529 !default;
-$black: #000 !default;
+$black: $gray-800 !default; //
 // scss-docs-end gray-color-variables
 
 // fusv-disable
@@ -43,6 +43,9 @@ $yellow: #fec90f !default; //
 $green: #39cb7f !default;
 $teal: #20c997 !default;
 $cyan: #1a9bfc !default;
+$light-gray: #e7e9f0 !default; //
+$common: $gray-500; //
+$black: $gray-800 !default;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -60,6 +63,8 @@ $colors: (
   "white": $white,
   "gray": $gray-600,
   "gray-dark": $gray-800,
+  "light-gray": $light-gray,
+  "common": $gray-500,
 ) !default;
 // scss-docs-end colors-map
 
@@ -85,6 +90,9 @@ $theme-colors: (
   "light": $light,
   "dark": $dark,
   "cyan": $cyan,
+  "light-gray": $light-gray,
+  "common": $gray-500,
+  "black": $gray-800,
 ) !default;
 // scss-docs-end theme-colors-map
 
@@ -112,8 +120,8 @@ $headings-margin-bottom:0 !default;
 $h2-font-size: 30px !default;
 $h3-font-size: 21px !default;
 $h4-font-size: 18px !default;
-// $h5-font-size:                $font-size-base * 1.25 !default;
-// $h6-font-size:                $font-size-base !default;
+$h5-font-size:                16px !default;
+$h6-font-size:                12px !default;
 
 // border
 $border-color: $gray-300 !default;
@@ -155,10 +163,13 @@ $link-color:                              $gray-800 !default;
 $link-decoration:                         none !default;
 
 // table
-$table-cell-padding-y:        .75rem !default;
+$table-cell-padding-y:        0.9375rem !default;
 $table-cell-padding-x:        0.125rem !default;
 
 // badge
 $badge-font-size:                   12px !default;
 $badge-font-weight:                 $font-weight-normal !default;
 $badge-color:                       $white !default;
+$badge-padding-y:                   5.5px !default;
+$badge-padding-x:                   14px !default;
+$badge-border-radius:               6px !default;

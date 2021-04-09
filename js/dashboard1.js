@@ -197,3 +197,71 @@ var sales_overview_options = {
 
   var total_sales_chart = new ApexCharts(document.querySelector("#total_sales"), total_sales_options);
   total_sales_chart.render();
+
+// --------------------------------
+// Weekly Stats
+// --------------------------------
+
+var weekly_stats_options = {
+  series: [{
+  name: 'Monthly Sales',
+  data: [35, 386, 20, 166, 30]
+}],
+  chart: {
+  height: 85,
+  width: '100%',
+  type: 'area',
+  offsetY: 30,
+  toolbar: {
+    show: false,
+  }
+},
+dataLabels: {
+  enabled: false
+},
+stroke: {
+  curve: 'smooth'
+},
+xaxis: {
+  labels: {
+    show: false,
+  },
+  axisTicks: {
+    show: false,
+  },
+  axisBorder: {
+    show: false,
+  },
+},
+yaxis: {
+  labels: {
+    show: false,
+  },
+  axisTicks: {
+    show: false,
+  },
+  axisBorder: {
+    show: false,
+  },
+},
+tooltip: {
+  x: {
+    format: 'dd/MM/yy HH:mm'
+  },
+},
+grid: {
+  show: false,
+  padding: {
+    // top: 0,
+    right: 0,
+    left:0,
+    // bottom: 30,
+
+  },
+},
+};
+
+var weekly_stats_chart = new ApexCharts(document.querySelector("#weekly_stats"), weekly_stats_options);
+weekly_stats_chart.render();
+
+
