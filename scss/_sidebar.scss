@@ -1,8 +1,8 @@
 
 .close-btn {
     position: absolute;
-    left: 225px;
-    font-size: 30px;
+    left: 231px;
+    font-size: 25px;
     z-index: 100;
 }
 .left-sidebar {
@@ -41,7 +41,7 @@
                 justify-content: center;
             }
             .sidebar-item .sidebar-link {
-                padding: 4px 5px;
+                padding: 7px 5px;
             }
         }
         &:hover {
@@ -55,7 +55,7 @@
                     justify-content: start;
                 }
                 .sidebar-item .sidebar-link {
-                    padding: 4px 14px;
+                    padding: 12px 14px;
                 }
             }
             .feature-container {
@@ -83,7 +83,7 @@
             display: block;
         }
         ul .sidebar-item .sidebar-link {
-            padding: 4px 14px;
+            padding: 12px 14px;
         }
         // & + .main-wrapper {
         //     margin-left: 0;
@@ -107,7 +107,7 @@
                     justify-content: center;
                 }
                 .sidebar-item .sidebar-link {
-                    padding: 4px 5px;
+                    padding: 7px 5px;
                 }
             }
             width: 78px;
@@ -128,7 +128,7 @@
                         justify-content: start;
                     }
                     .sidebar-item .sidebar-link {
-                        padding: 4px 14px;
+                        padding: 12px 14px;
                     }
                 }
                 .feature-container {
