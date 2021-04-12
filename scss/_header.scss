@@ -1,9 +1,12 @@
 .top-navbar {
-  position: fixed;
+  // position: fixed;
+  
   width: 100%;
   z-index: 50;
   background-color: $white;
   .navbar {
+    line-height: $header-height;
+    height: $header-height;
     padding: 0;
     .navbar-header {
       @include media-breakpoint-up(lg) {
@@ -13,22 +16,22 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      .navbar-brand {
-        padding: 0;
-        line-height: $header-height;
-        height: $header-height;
-        margin-left: 27px;
-        display: flex;
-        // align-items: center;
-        .logo-text {
-          span {
-            color: $gray-800;
-            font-weight: $font-weight-bold;
-            margin-left: 13px;
-            font-size: 24px;
-          }
-        }
-      }
+      // .navbar-brand {
+      //   padding: 0;
+      //   line-height: $header-height;
+      //   height: $header-height;
+      //   margin-left: 27px;
+      //   display: flex;
+      //   // align-items: center;
+      //   .logo-text {
+      //     span {
+      //       color: $gray-800;
+      //       font-weight: $font-weight-bold;
+      //       margin-left: 13px;
+      //       font-size: 24px;
+      //     }
+      //   }
+      // }
     }
     .navbar-collapse {
       padding: $navbar-collapse-padding;
@@ -36,6 +39,7 @@
         flex-direction: row;
         height: $header-height;
         line-height: $header-height;
+        background-color: $white;
         .dropdown-menu {
           position: absolute;
           line-height: 2;

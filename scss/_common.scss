@@ -1,5 +1,5 @@
 .main-wrapper {
-    padding-top: $header-height;
+    // padding-top: $header-height;
     margin-left: $sidebar-width-full;
     @include media-breakpoint-down(md) {
         margin-left: 0;
