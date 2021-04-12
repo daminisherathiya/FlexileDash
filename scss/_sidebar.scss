@@ -5,7 +5,7 @@
     width: $sidebar-width-full;
     background-color: $white;
     overflow: auto;
-    z-index: 50;
+    z-index: 1;
     border-right: 1px solid $gray-300;
     @include media-breakpoint-only(md) {
         & + .main-wrapper {

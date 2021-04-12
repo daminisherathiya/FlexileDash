@@ -10,7 +10,7 @@ $gray-300: #ecf0f2 !default; //
 $gray-400: #bcc3d3 !default; //
 $gray-500: #777e89 !default; //
 $gray-600: #99abb4 !default; //
-$gray-700: #495057 !default;
+$gray-700: #949db2 !default; //
 $gray-800: #11142d !default; //
 $gray-900: #212529 !default;
 $black: $gray-800 !default; //
@@ -153,7 +153,7 @@ $form-select-bg: $gray-200 !default;
 $form-select-font-weight: $font-weight-normal !default;
 $form-select-border-width: 0 !default;
 $form-select-border-radius: 5px !default;
-$form-select-indicator-color: #949db2 !default;
+$form-select-indicator-color: $gray-700 !default;
 
 // card
 $card-border-radius:                20px !default;

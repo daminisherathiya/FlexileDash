@@ -16,24 +16,37 @@
     <!-- header start -->
     <header class="top-navbar">
       <nav class="navbar navbar-expand-md navbar-light">
+         <!-- collapse sidebar button in small screen -->
         <a class="d-block d-md-none fs-3 ms-4 toggle-minimize" aria-current="page" href="#"><i class="mdi mdi-menu"></i></a>
         <div class="navbar-header">
           <a class="navbar-brand" href="#">
+            <!-- logo image -->
             <div><img src="./images/logo.png" alt=""></div>
+            <!-- logo text -->
             <span class="logo-text"><span>FlexileDash</span></span>
           </a>
         </div>
+
         <button class="navbar-toggler shadow-none me-4 border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- nav-link collapse buttom in small screen -->
           <i class=" fas fa-ellipsis-h"></i>
         </button>
         
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto d-none d-md-flex">
             <li class="nav-item toggle-minimize">
+              <!-- collapse sidebar button in big screen -->
               <a class="nav-link active" aria-current="page" href="#"><i class="mdi mdi-menu"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><i class="mdi mdi-magnify"></i></a>
+              <!-- <a class="nav-link" href="#"><i class="mdi mdi-magnify"></i></a> -->
+                <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="mdi mdi-magnify"></i></a>
+                <div class="collapse position-absolute nav-search-bar overflow-hidden" id="collapseExample">
+                  <div class="input-group search-input-height">
+                    <span class="input-group-text bg-white border-0" id="basic-addon1"><i class="mdi mdi-magnify fs-3"></i></span>
+                    <input type="text" class="form-control border-0 search-input shadow-none" placeholder="Search anything" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </div>
             </li>
           </ul>
           <ul class="navbar-nav pe-1 ms-lg-auto ms-3">
@@ -157,7 +170,7 @@
         <div class="flex-grow-1"></div>
         <div class="feature-container">
           <div class="feature-box">
-            <h4>Upgrade to <br> Premium</h4>
+            <h4 class="mb-2">Upgrade to <br> Premium</h4>
             <button class="btn btn-primary">Upgrade</button>
             <div class="bg-img"><img src="./images/sidebar-feature-bg.png" alt=""></div>
           </div>
@@ -169,11 +182,16 @@
 
     <div class="main-wrapper">
       <div class="container-fluid">
+        
         <div class="row banner-1">
+           <!-- Start welcome user section-->
           <div class="col-md-6">
             <p class="fs-5">Welcome Johnathan</p>
             <h2>Analytical Dashboard</h2>
           </div>
+          <!-- End welcome user section-->
+
+          <!-- Start add new section-->
           <div class="col-md-6 d-flex align-items-center">
             <div class="d-md-flex ms-sm-auto d-none">
               <div class="me-2 mb-3 mb-sm-0">
@@ -189,9 +207,11 @@
               </div>
             </div>
           </div>
+          <!-- End add new section-->
         </div>
 
         <div class="row">
+          <!-- Start Download latest report section-->
           <div class="col-xl-6">
             <div class="card border-0 john-box">
               <div class="card-body">
@@ -210,7 +230,7 @@
                       <div class="rounded rounded-circle bg-cyan fs-3">$</div>
                     </div>
                     <h2 class="fw-medium text-white">$93,438.78</h2>
-                    <p class="text-white mb-1">Monthly revenue</p>
+                    <p class="monthly-revenue mb-1">Monthly revenue</p>
                   </div>
                 </div>
               </div>
@@ -232,6 +252,9 @@
               </div>
             </div>
           </div>
+          <!-- End Download latest report section-->
+
+          <!-- Start Sales Overview section-->
           <div class="col-xl-6">
             <div class="card">
               <div class="card-body">
@@ -251,9 +274,11 @@
               </div>
             </div>
           </div>
+          <!-- End Sales Overview section-->
         </div>
 
         <div class="row">
+          <!-- Start Total Sales section-->
           <div class="col-xl-4">
             <div class="card">
               <div class="card-body">
@@ -281,10 +306,12 @@
                   </div>
                   <div class="chart-icon"><i class="mdi mdi-cart-outline fs-1"></i></div>
                 </div>
-                
               </div>
             </div>
           </div>
+          <!-- End Total Sales section-->
+
+          <!-- Start Products Performance section-->
           <div class="col-xl-8">
             <div class="card">
               <div class="card-body">
@@ -303,8 +330,10 @@
                   </div>
                 </div>
                 <div class="table-responsive">
+                  <!-- Start table-->
                   <table class="table align-middle mb-0">
                     <thead>
+                      <!-- Start row -->
                       <tr>
                         <th scope="col" colspan="2" class="text-muted fs-7">Assigned</th>
                         <th scope="col" class="text-muted fs-7">Name</th>
@@ -313,6 +342,7 @@
                       </tr>
                     </thead>
                     <tbody>
+                      <!-- Start row -->
                       <tr>
                         <td class="">
                           <span><img src="./images/user/2.png" alt=""></span>
@@ -326,7 +356,8 @@
                         <td class="fs-6">Elite Admin</td>
                         <td><span class="badge bg-cyan">Low</span></td>
                         <td class="fs-6 budget">$3.9K</td>
-                      </tr>
+                      </tr> <!-- End row -->
+                      <!-- Start row -->
                       <tr>
                         <td class="">
                           <span><img src="./images/user/3.png" alt=""></span>
@@ -340,7 +371,8 @@
                         <td class="fs-6">Real Homes WP Theme</td>
                         <td><span class="badge bg-primary">Medium</span></td>
                         <td class="fs-6 budget">$24.5K</td>
-                      </tr>
+                      </tr> <!-- End row -->
+                      <!-- Start row -->
                       <tr>
                         <td class="">
                           <span><img src="./images/user/4.png" alt=""></span>
@@ -354,7 +386,8 @@
                         <td class="fs-6">MedicalPro WP Theme</td>
                         <td><span class="badge bg-warning">High</span></td>
                         <td class="fs-6 budget">$24.5K</td>
-                      </tr>
+                      </tr> <!-- End row -->
+                      <!-- Start row -->
                       <tr>
                         <td class="">
                           <span><img src="./images/user/5.png" alt=""></span>
@@ -368,7 +401,8 @@
                         <td class="fs-6">Hosting Press HTML</td>
                         <td><span class="badge align-middle bg-danger">Low</span></td>
                         <td class="fs-6 budget">$2.4K</td>
-                      </tr>
+                      </tr> <!-- End row -->
+                      <!-- Start row -->
                       <tr>
                         <td class="">
                           <span><img src="./images/user/6.png" alt=""></span>
@@ -382,18 +416,21 @@
                         <td class="fs-6">Helping Hands WP Theme</td>
                         <td><span class="badge align-middle bg-success">Low</span></td>
                         <td class="fs-6 budget">$9.3K</td>
-                      </tr>
+                      </tr> <!-- End row -->
                     </tbody>
                   </table>
+                  <!-- End table-->
                 </div>
               </div>
             </div>
           </div>
+          <!-- End Products Performance section-->
         </div>
 
         <div class="row">
+          <!-- Start Angular 12 section-->
           <div class="col-xl-4 col-md-6">
-            <div class="card h-100">
+            <div class="card">
               <div><img class="img-fluid w-100" src="./images/bg-1.png" alt=""></div>
               <div class="card-body border-bottom">
                 <p class="text-muted fs-7 clock-p"><i class="far fa-clock fs-4 me-2"></i> 22 March, 2021</p>
@@ -413,8 +450,11 @@
               </div>
             </div>
           </div>
+          <!-- End Angular 12 section-->
+
+          <!-- Start Weekly Stats section-->
           <div class="col-xl-4  col-md-6">
-            <div class="card overflow-hidden h-100">
+            <div class="card overflow-hidden">
               <div class="card-body pb-0">
                 <div class="d-flex justify-content-between">
                   <div>
@@ -478,8 +518,11 @@
               </div>
             </div>
           </div>
+          <!-- End Weekly Stats section-->
+
+          <!-- Start Daily Activities section-->
           <div class="col-xl-4">
-            <div class="card h-100">
+            <div class="card">
               <div class="card-body">
                 <div class="d-flex justify-content-between">
                   <div>
@@ -567,6 +610,7 @@
               </div>
             </div>
           </div>
+           <!-- End Daily Activities section-->
         </div>
       </div>
     </div>
@@ -576,5 +620,6 @@
     <script src="./apexcharts-bundle/dist/apexcharts.min.js"></script>
     <script src="./js/custom.js"></script>
     <script src="./js/dashboard1.js"></script>
+    <!-- <script src="./js/feather.min.js"></script> -->
   </body>
 </html>

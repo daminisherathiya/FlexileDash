@@ -86,6 +86,12 @@ var sales_overview_options = {
       enabled: true,
     }
   },
+  colors: ['#1a9bfc'],
+  fill: {
+    colors: '#f3faff',
+    opacity: 1,
+    type: 'solid',
+  },
   dataLabels: {
     enabled: false
   },
@@ -119,6 +125,7 @@ var sales_overview_options = {
       format: 'dd/MM/yy HH:mm'
     },
   },
+  
   grid: {
     show: false,
     padding: {
@@ -221,6 +228,12 @@ var weekly_stats_options = {
   sparkline: {
     enabled: true,
   }
+},
+colors: ['#1a9bfc'],
+fill: {
+  colors: '#f3faff',
+  opacity: 1,
+  type: 'solid',
 },
 dataLabels: {
   enabled: false

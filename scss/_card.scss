@@ -33,9 +33,13 @@
     }
     .card-subtitle {
         font-size: 13px;
+        color: $gray-600;  
     }
     i {
         font-size: 6px;
+    }
+    .monthly-revenue {
+        color: #9fb8ef;
     }
     .text-muted {
         line-height: 13px;
@@ -110,5 +114,14 @@
         td {
             border: none;
         }
+    }
+    th:first-child {
+        width: 36%;
+    }
+    th:nth-child(2) {
+        width: 36%;
+    }
+    th:nth-child(3) {
+        width: 19%;
     }
 }
