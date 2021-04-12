@@ -186,17 +186,13 @@
         .sidebar-item {
             margin: 0 15px;
             .sidebar-link {
-                padding: 4px 14px;
+                padding: 12px 14px;
                 width: 100%;
                 color: $gray-500;
                 display: flex;
                 align-items: center;
                 border-radius: 9px;
-                i {
-                    font-size: 26px;
-                    margin-right: 18px;
-                    
-                }
+                
                 &.active {
                     background-color:$cyan;
                     color: white;
@@ -209,6 +205,7 @@
                 }
                 .hide-menu {
                     font-size: 15px;
+                    margin-left: 18px;
                 }
             }
         }
@@ -236,3 +233,6 @@
     } 
 }
 
+.nav-icon {
+    color: $gray-700;
+}

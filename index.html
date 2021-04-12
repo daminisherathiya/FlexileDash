@@ -33,19 +33,19 @@
             </li>
             <li class="sidebar-item">
               <a href="#" class="sidebar-link">
-                <i class="mdi mdi-chart-pie"></i>
+                <i data-feather="pie-chart" class="icon"></i>
                 <span class="hide-menu">Dashboard</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a href="#" class="sidebar-link">
-                <i class="mdi mdi-inbox"></i>
+                <i data-feather="inbox" class="icon"></i>
                 <span class="hide-menu">Inbox</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a href="#" class="sidebar-link active">
-                <i class="mdi mdi-toggle-switch"></i>
+                <i data-feather="toggle-right" class="icon"></i>
                 <span class="hide-menu">UI Elements</span>
               </a>
             </li>
@@ -56,37 +56,37 @@
             </li>
             <li class="sidebar-item">
               <a href="#" class="sidebar-link">
-                <i class="mdi mdi-file-document"></i>
+                <i data-feather="file-text" class="icon"></i>
                 <span class="hide-menu">Forms</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a href="#" class="sidebar-link">
-                <i class="mdi mdi-table"></i>
+                <i data-feather="sidebar" class="icon"></i>
                 <span class="hide-menu">Tables</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a href="#" class="sidebar-link">
-                <i class="mdi mdi-chart-bar"></i>
+                <i data-feather="bar-chart" class="icon"></i>
                 <span class="hide-menu">Charts</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a href="#" class="sidebar-link">
-                <i class="mdi mdi-widgets"></i>
+                <i data-feather="grid" class="icon"></i>
                 <span class="hide-menu">Widgets</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a href="#" class="sidebar-link">
-                <i class="mdi mdi-bullseye"></i>
+                <i data-feather="target" class="icon"></i>
                 <span class="hide-menu">Icons</span>
               </a>
             </li>
             <li class="sidebar-item">
               <a href="#" class="sidebar-link">
-                <i class="mdi mdi-map-marker"></i>
+                <i data-feather="map-pin" class="icon"></i>
                 <span class="hide-menu">Maps</span>
               </a>
             </li>
@@ -110,7 +110,7 @@
       <header class="top-navbar">
         <nav class="navbar navbar-expand-md navbar-light">
           <!-- collapse sidebar button in small screen -->
-          <a class="d-block d-md-none fs-3 ms-4 toggle-minimize" aria-current="page" href="#"><i class="mdi mdi-menu"></i></a>
+          <a class="d-block d-md-none fs-3 ms-4 toggle-minimize" aria-current="page" href="#"><i data-feather="menu" class="nav-icon"></i></a>
 
           <button class="navbar-toggler shadow-none me-4 border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <!-- nav-link collapse buttom in small screen -->
@@ -121,14 +121,14 @@
             <ul class="navbar-nav me-auto d-none d-md-flex">
               <li class="nav-item toggle-minimize">
                 <!-- collapse sidebar button in big screen -->
-                <a class="nav-link active" aria-current="page" href="#"><i class="mdi mdi-menu"></i></a>
+                <a class="nav-link active" aria-current="page" href="#"><i data-feather="menu" class="nav-icon"></i></a>
               </li>
               <li class="nav-item">
                 <!-- <a class="nav-link" href="#"><i class="mdi mdi-magnify"></i></a> -->
-                  <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="mdi mdi-magnify"></i></a>
+                  <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i data-feather="search" class="nav-icon"></i></a>
                   <div class="collapse position-absolute nav-search-bar overflow-hidden" id="collapseExample">
                     <div class="input-group search-input-height">
-                      <span class="input-group-text bg-white border-0" id="basic-addon1"><i class="mdi mdi-magnify fs-3"></i></span>
+                      <span class="input-group-text bg-white border-0" id="basic-addon1"><i data-feather="search" class="nav-icon"></i></span>
                       <input type="text" class="form-control border-0 search-input shadow-none" placeholder="Search anything" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
                   </div>
@@ -136,11 +136,11 @@
             </ul>
             <ul class="navbar-nav pe-1 ms-lg-auto ms-3">
               <li class="nav-item">
-                <a class="nav-link" href="#"><i class="mdi mdi-cart-outline"></i></a>
+                <a class="nav-link" href="#"><i data-feather="shopping-cart" class="nav-icon"></i></a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="mdi mdi-message-outline"></i>
+                  <i data-feather="message-square" class="nav-icon"></i>
                   <div class="notify">
                     <span class="point-yellow bg-warning"></span>
                   </div>
@@ -154,7 +154,7 @@
               </li>
               <li class="nav-item dropdown me-auto">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="mdi mdi-bell-outline"></i>
+                  <i data-feather="bell" class="nav-icon"></i>
                   <div class="notify">
                     <span class="point-primary bg-primary"></span>
                   </div>
@@ -204,7 +204,7 @@
                 </select>
               </div>
               <div>
-                <button class="btn add-new-btn text-white btn-cyan"><i class="fas fa-plus"></i> Add New</button>
+                <button class="btn add-new-btn text-white btn-cyan"><i data-feather="plus" class="text-white"></i> Add New</button>
               </div>
             </div>
           </div>
@@ -447,7 +447,7 @@
                   <div class="me-1"><img src="./images/user/6.png" alt=""></div>
                   <div class="rounded-sm rounded-circle bg-light-green"><i class="mdi mdi-plus text-success fs-4"></i></div>
                 </div>
-                <div class="me-2"><i class=" fab fa-rocketchat fs-2"></i></div>
+                <div class="me-2"><i data-feather="message-circle" class="text-gray"></i></div>
               </div>
             </div>
           </div>
@@ -619,8 +619,8 @@
     <script src="./js/jquery.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./apexcharts-bundle/dist/apexcharts.min.js"></script>
-    <script src="./js/custom.js"></script>
     <script src="./js/dashboard1.js"></script>
-    <!-- <script src="./js/feather.min.js"></script> -->
+    <script src="./js/feather.min.js"></script>
+    <script src="./js/custom.js"></script>
   </body>
 </html>

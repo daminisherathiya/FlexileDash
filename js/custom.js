@@ -1,3 +1,5 @@
+
+feather.replace();
 var toggle_minimize = document.querySelectorAll(".toggle-minimize");
 var left_sidebar = document.querySelector(".left-sidebar");
 var logo_text = document.querySelector(".logo-text");
