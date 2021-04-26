@@ -6,6 +6,7 @@ var logo_text = document.querySelector(".logo-text");
 var navbar_header = document.querySelector(".navbar-header");
 var sidbar_items = document.querySelectorAll(".sidebar-item");
 var close_btn = document.querySelector(".close-btn");
+var top_navbar = document.querySelector(".top-navbar");
 
 // minimize-sidebar
 toggle_minimize.forEach(element => {
@@ -15,6 +16,7 @@ close_btn.addEventListener("click", toggle_sidebar);
 function toggle_sidebar() {
     left_sidebar.classList.toggle("small-sidebar");
     close_btn.classList.toggle("d-none");
+    top_navbar.classList.toggle("expand-navbar");
 }
 
  // resize sidebar
@@ -22,6 +24,7 @@ window.addEventListener("resize", myFunction);
 function myFunction() {
     left_sidebar.classList.remove("small-sidebar");
     close_btn.classList.add("d-none");
+    top_navbar.classList.remove("expand-navbar");
 }
 
 sidbar_items.forEach(element => {
