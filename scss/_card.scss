@@ -11,14 +11,14 @@
 }
 .add-new-btn {
     margin-right: 7px;
-    padding-top: 8.5px;
-    padding-bottom: 8.5px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
     i {
         margin-right: 12px
     }
 }
 .main-select {
-    padding: 10.5px 42px 9.5px 17px ;
+    padding: 10.5px 44px 9.5px 16px ;
 }
 .btn.btn-primary:hover {
     color: $primary !important;
@@ -64,6 +64,11 @@
         top: calc(50% - 40px);
         left: calc(50% - 10px);
     }
+    .chart-icon2 {
+        position: absolute;
+        top: calc(50% - 17px);
+        left: calc(50% - -5px);
+    }
     .activity-box {
         .activity {
             position: relative;
@@ -97,6 +102,9 @@
             }
         }
     }
+    .transaction-box {
+        padding: 13px 0;
+    }
     
     &.john-box {
         background-color: #e6f4ff;
@@ -105,6 +113,12 @@
         .card-body div{
             padding: 5px 11px;
             margin-bottom: 28px;
+        }   
+    }
+    &.earning-box {
+        background: url(../images/download-bg2.png) no-repeat top right;
+        .card-body div{
+            // padding-left: 10px;
         }   
     }
 }

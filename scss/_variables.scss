@@ -47,6 +47,9 @@ $light-gray: #e7e9f0 !default; //
 $common: $gray-500; //
 $black: $gray-800 !default;
 $light-green: #ebfaf2;
+$light-red: #fdf3f5;
+$light-blue: #edf6fc;
+$light-yellow: #fdf8e8;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -67,6 +70,9 @@ $colors: (
   "light-gray": $light-gray,
   "common": $gray-500,
   "light-green": $light-green,
+  "light-red": $light-red,
+  "light-blue": $light-blue,
+  "light-yellow":$light-yellow,
 ) !default;
 // scss-docs-end colors-map
 
@@ -96,6 +102,9 @@ $theme-colors: (
   "common": $gray-500,
   "black": $gray-800,
   "light-green": $light-green,
+  "light-red": $light-red,
+  "light-blue": $light-blue,
+  "light-yellow":$light-yellow,
   "gray": $gray-600,
 ) !default;
 // scss-docs-end theme-colors-map
@@ -104,8 +113,6 @@ $theme-colors: (
 $body-color: $gray-500 !default;
 $font-family-sans-serif:'DM Sans', sans-serif;
 
-
-$grid-gutter-width:           1.5rem !default;
 
 // paragraph
 $paragraph-margin-bottom:   0 !default;
@@ -139,7 +146,9 @@ $font-sizes: (
   4: 21px, //
   5: 18px, //
   6: 14px, //
-  7: 13px //
+  7: 13px, //
+  8: 11px, //
+  9: 10px //
 );
 
 // button
