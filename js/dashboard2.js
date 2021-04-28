@@ -81,7 +81,6 @@ var product_perfomance_options = {
 }],
   chart: {
   type: 'bar',
-  width: 413,
   height: 250,
   offsetY: 0,
   stacked: true,
@@ -97,8 +96,6 @@ plotOptions: {
   bar: {
     horizontal: false,
     columnWidth: '42%',
-    // endingShape: 'rounded',
-    // startingShape: 'rounded',
     borderRadius: 9,
     rangeBarGroupRows: true,
   },
@@ -111,6 +108,14 @@ stroke: {
   width: 6,
   colors: ['white']
 },
+responsive: [{
+  breakpoint: 376,
+  options: {
+    stroke: {
+      width: 0,
+    },
+  }
+}],
 xaxis: {
   categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun','aug'],
   axisTicks: {
@@ -177,6 +182,16 @@ grid: {
       right: 0,
   },
 },
+responsive: [{
+  breakpoint: 337,
+  options: {
+    chart: {
+      offsetY:7,
+      width:120,
+      height: 120,
+    }
+  }
+}],
 stroke: {
   colors: ['transparent'],
 },
@@ -211,3 +226,78 @@ plotOptions: {
 
 var yearly_sales_chart = new ApexCharts(document.querySelector("#yearly-sales"), yearly_sales_options);
 yearly_sales_chart.render();
+
+// --------------------------------
+// Weekly Stats
+// --------------------------------
+
+var weekly_stats_options = {
+  series: [{
+  name: 'Monthly Sales',
+  data: [40, 60, 50, 65]
+}],
+  chart: {
+  height: 155,
+  width: '100%',
+  type: 'area',
+  offsetY: 0,
+  toolbar: {
+    show: false,
+  },
+  sparkline: {
+    enabled: true,
+  }
+},
+colors: ['#1a9bfc'],
+fill: {
+  colors: '#f3faff',
+  opacity: 1,
+  type: 'solid',
+},
+dataLabels: {
+  enabled: false
+},
+stroke: {
+  curve: 'smooth'
+},
+xaxis: {
+  labels: {
+    show: false,
+  },
+  axisTicks: {
+    show: false,
+  },
+  axisBorder: {
+    show: false,
+  },
+},
+yaxis: {
+  labels: {
+    show: false,
+  },
+  axisTicks: {
+    show: false,
+  },
+  axisBorder: {
+    show: false,
+  },
+},
+tooltip: {
+  x: {
+    format: 'dd/MM/yy HH:mm'
+  },
+},
+grid: {
+  show: false,
+  padding: {
+    // top: 0,
+    right: 0,
+    left:0,
+    // bottom: 30,
+
+  },
+},
+};
+
+var weekly_stats_chart = new ApexCharts(document.querySelector("#weekly_stats"), weekly_stats_options);
+weekly_stats_chart.render();

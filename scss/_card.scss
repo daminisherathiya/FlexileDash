@@ -59,6 +59,11 @@
             color: $cyan;
         }
     }
+    @include media-breakpoint-down(md){
+        .border-md-end-0.border-end {
+            border-right: 0px solid #ecf0f2!important;
+        }
+    }
     .chart-icon {
         position: absolute;
         top: calc(50% - 40px);
@@ -102,6 +107,15 @@
             }
         }
     }
+    .gap-inside-card {
+        margin: 13px 0;
+    }
+    .img-radius {
+        border-radius: 10px;
+    }
+    .date-color {
+        color: $gray-900;
+    }
     .transaction-box {
         padding: 13px 0;
     }
@@ -124,11 +138,6 @@
 }
   
 .table {
-    tr:last-child {
-        td {
-            border: none;
-        }
-    }
     th:first-child {
         width: 245px;
     }
@@ -139,3 +148,40 @@
         width: 130px;
     }
 }
+.products-perfomance-table {
+    table {
+        tr {
+            td {
+                padding: 18px 2px;
+            }
+            td:nth-child(1) {
+                width: 145px;
+            }
+            td:nth-child(2) {
+                width: 32%;
+                @include media-breakpoint-down(md) {
+                    padding: 18px 10px;
+                }
+            }
+            td:nth-child(3) {
+                width: 21.4%;
+                padding: 15px 36px 15px 2px;
+            }
+            td:nth-child(4) {
+                width: 19.49%;
+            }
+            td:nth-child(5) {
+                width: 80px;
+                @include media-breakpoint-down(md) {
+                    padding: 18px 10px;
+                }
+            }
+        }
+        tr:last-child {
+            td {
+                padding-bottom: 7px;
+            }
+        }
+    }
+}
+  

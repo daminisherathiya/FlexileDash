@@ -12,7 +12,7 @@ $gray-500: #777e89 !default; //
 $gray-600: #99abb4 !default; //
 $gray-700: #949db2 !default; //
 $gray-800: #11142d !default; //
-$gray-900: #212529 !default;
+$gray-900: #4a4b59 !default; //
 $black: $gray-800 !default; //
 // scss-docs-end gray-color-variables
 
@@ -48,8 +48,9 @@ $common: $gray-500; //
 $black: $gray-800 !default;
 $light-green: #ebfaf2;
 $light-red: #fdf3f5;
-$light-blue: #edf6fc;
+$light-cyan: #edf6fc;
 $light-yellow: #fdf8e8;
+$light-blue:#ebf0fc;
 // scss-docs-end color-variables
 
 // scss-docs-start colors-map
@@ -71,8 +72,9 @@ $colors: (
   "common": $gray-500,
   "light-green": $light-green,
   "light-red": $light-red,
-  "light-blue": $light-blue,
+  "light-cyan": $light-cyan,
   "light-yellow":$light-yellow,
+  "light-blue":$light-blue,
 ) !default;
 // scss-docs-end colors-map
 
@@ -103,8 +105,9 @@ $theme-colors: (
   "black": $gray-800,
   "light-green": $light-green,
   "light-red": $light-red,
-  "light-blue": $light-blue,
+  "light-cyan": $light-cyan,
   "light-yellow":$light-yellow,
+  "light-blue":$light-blue,
   "gray": $gray-600,
 ) !default;
 // scss-docs-end theme-colors-map
@@ -156,6 +159,8 @@ $btn-padding-y: 8.5px !default;
 $btn-padding-x: 15px !default;
 $btn-font-size: 15px !default;
 $btn-border-radius: 5px !default;
+$input-btn-focus-box-shadow:    none !default;
+$input-btn-focus-width:         0 !default;
 
 // form-select
 $form-select-font-size: 14px !default;
@@ -174,6 +179,7 @@ $card-spacer-x:                     30px !default;
 // link
 $link-color:                              $gray-800 !default;
 $link-decoration:                         none !default;
+$link-hover-color:                        $cyan !default;
 
 // table
 $table-cell-padding-y:        0.9375rem !default;

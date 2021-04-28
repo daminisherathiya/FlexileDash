@@ -19,10 +19,18 @@
 .fw-medium {
     font-weight: $font-weight-medium;
 }
-.rounded {
+.rounded-md {
     height: 48px;
     width: 48px;
     line-height: 48px;
+    font-size: 20px;
+    color: $white;
+    text-align: center;
+}
+.rounded-normal {
+    height: 44px;
+    width: 44px;
+    line-height: 44px;
     font-size: 20px;
     color: $white;
     text-align: center;
@@ -58,7 +66,19 @@
     width: 18px;
     height: 18px;
 }
+.table {
+    td {
+        vertical-align: middle;
+    }
+    tr:last-child {
+        td {
+            border: none;
+        }
+    }
+}
   
   
+  
+
   
   
