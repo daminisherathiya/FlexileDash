@@ -60,6 +60,9 @@
             color: $gray-700;
             font-size: 24px;
           }
+          &:hover .nav-icon{
+            color: $cyan;
+          }
           padding: $topbar-navlink-padding;
         }
       }

@@ -63,8 +63,15 @@
     text-align: center;
 }
 .feather-sm {
+    cursor: pointer;
     width: 18px;
     height: 18px;
+    &:hover {
+        color: $cyan;
+    }
+    &.danger-hover:hover {
+        color: $danger;
+    }
 }
 .table {
     td {
